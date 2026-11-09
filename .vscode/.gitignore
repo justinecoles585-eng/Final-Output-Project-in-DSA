@@ -1,0 +1,4 @@
+   # Compiled program
+   *.exe
+   *.o
+   output/

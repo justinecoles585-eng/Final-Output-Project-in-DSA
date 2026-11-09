@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run RiffHouse",
+      "type": "shell",
+      "command": "g++ -std=c++11 -Wall -Wextra -o riffhouse main.cpp src/BST.cpp src/Brand.cpp src/Cart.cpp src/CatalogMenu.cpp src/Checkout.cpp src/Input.cpp src/Inventory.cpp src/OrderQueue.cpp src/Product.cpp src/SalesMenu.cpp src/Search.cpp src/Sorting.cpp src/TransactionStack.cpp; if ($?) { .\\riffhouse.exe }",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "clear": true,
+        "panel": "shared"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
